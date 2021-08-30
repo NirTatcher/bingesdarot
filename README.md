@@ -1,7 +1,7 @@
 ### https://sdarotbinging.web.app/
 ## Sdarot Binging Project
-This project is a tutorial for you to binge watch Sdarot.tv!
-with this feature you will save a ton of click's! :) 
+This project is a tutorial for you to binge watch Sdarot.tv! \n
+With this feature you will save a ton of click's! :) 
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
