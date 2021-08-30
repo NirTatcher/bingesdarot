@@ -1,6 +1,6 @@
 ### https://sdarotbinging.web.app/
 ## Sdarot Binging Project
-#This project is a tutorial for you to binge watch Sdarot.tv!
+This project is a tutorial for you to binge watch Sdarot.tv!
 with this feature you will save a ton of click's! :) 
 <!-- # Getting Started with Create React App
 
