@@ -5,6 +5,7 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import CodeInput from './CodeInput';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,7 +35,7 @@ function getStepContent(step) {
     case 1:
       return 'create a new script';
     case 2:
-      return 'copy this!';
+      return <CodeInput/>;
     case 3:
       return 'refresh sdarot';
     case 4:
@@ -91,6 +92,10 @@ export default function StepperInstructions() {
   const handleReset = () => {
     setActiveStep(0);
   };
+  const copyFunction=(event)=>{
+    console.log(event.target.value)
+    navigator.clipboard.writeText(event.target.value)
+  }
 
   return (
     <div className={classes.root}>
@@ -151,6 +156,7 @@ export default function StepperInstructions() {
           </div>
         )}
       </div>
+  
     </div>
   );
 }
