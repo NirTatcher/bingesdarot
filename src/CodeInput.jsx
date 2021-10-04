@@ -12,7 +12,7 @@ export default function CodeInput() {
     }, [])
     const copyFunction=(event)=>{
         console.log(event.target.value)
-        navigator.clipboard.writeText(event.target.value)
+        navigator.clipboard.writeText(userScriptCode)
         setButtonValue("Copied!")
       }
     return (
