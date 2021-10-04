@@ -21,24 +21,26 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Add Tampermonkey to your Chrome Browsers', 'Create a new user script', 'Copy and paste code below', 'Save and refresh Sdarot page', 'Is it working?'];
+  return ['Add Tampermonkey to your Chrome Browsers', 'Create a new user script', 'Copy This!',"Paste in a new script" ,'Save and refresh Sdarot page', 'Is it working?'];
 }
 
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <div style={{alignItems:'start'}}>
-        Visit  <a href="https://www.tampermonkey.net" >Tampermonkey</a><br/>
-          and download Tampermonkey Stable
-      
+      return <div style={{ alignItems: 'start' }}>
+        Visit  <a href="https://www.tampermonkey.net" >Tampermonkey</a><br />
+        and download Tampermonkey Stable
+
       </div>
     case 1:
       return 'create a new script';
     case 2:
-      return <CodeInput/>;
+      return <CodeInput />;
     case 3:
-      return 'refresh sdarot';
+      return "Paste on a blank 'New Script' page";
     case 4:
+      return 'refresh sdarot';
+    case 5:
       return 'is it working';
     default:
       return 'Unknown step';
@@ -92,10 +94,7 @@ export default function StepperInstructions() {
   const handleReset = () => {
     setActiveStep(0);
   };
-  const copyFunction=(event)=>{
-    console.log(event.target.value)
-    navigator.clipboard.writeText(event.target.value)
-  }
+
 
   return (
     <div className={classes.root}>
@@ -156,7 +155,7 @@ export default function StepperInstructions() {
           </div>
         )}
       </div>
-  
+
     </div>
   );
 }
