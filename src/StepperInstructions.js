@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Add Tampermonkey to your Chrome Browsers', 'Create a new user script', 'Copy the Sdarot-Binging script!',"Paste in a new script" ,'Save and refresh Sdarot page', 'Is it working?'];
+  return ['Add Tampermonkey to your Chrome Browsers', 'Copy the Sdarot-Binging script!',"Paste in a new script" ,'Save and refresh Sdarot page', 'Is it working?'];
 }
 
 function getStepContent(step) {
@@ -33,14 +33,12 @@ function getStepContent(step) {
 
       </div>
     case 1:
-      return 'Create a new script';
-    case 2:
       return <CodeInput />;
-    case 3:
+    case 2:
       return "Paste on a blank 'New Script' page";
-    case 4:
+    case 3:
       return 'Refresh Sdarot';
-    case 5:
+    case 4:
       return 'Should work by now!';
     default:
       return 'Unknown step';
