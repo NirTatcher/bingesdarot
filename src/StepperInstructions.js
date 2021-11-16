@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Add Tampermonkey to Chrome', 'Copy the Sdarot-Binging script!',"Paste in a new script" ,'Save and refresh Sdarot page', 'Is it working?'];
+  return ['Add Tampermonkey to Chrome', 'Copy the Sdarot-Binging script!',"Paste in a new script" ,'Save and refresh', 'Is it working?'];
 }
 
 function getStepContent(step) {
