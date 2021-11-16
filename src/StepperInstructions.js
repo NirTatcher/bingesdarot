@@ -50,9 +50,7 @@ export default function StepperInstructions() {
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
 
-  const isStepOptional = (step) => {
-    return step === 1;
-  };
+
 
 
 
