@@ -35,9 +35,9 @@ function getStepContent(step) {
     case 1:
       return <CodeInput />;
     case 2:
-      return "Paste on a blank 'New Script' page";
+      return "Create a new blank script and paste";
     case 3:
-      return 'Refresh Sdarot';
+      return 'Refresh Sdarot website';
     case 4:
       return 'Should work by now!';
     default:
