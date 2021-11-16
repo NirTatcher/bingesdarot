@@ -20,7 +20,8 @@ export default function CodeInput() {
         <div>
             <label htmlFor="code_input">copy this!</label>
             <br/>
-            <Button onClick={(e)=>copyFunction(e)} >{buttonValue}</Button>
+            <Button variant="contained"
+                color="primary" onClick={(e)=>copyFunction(e)} >{buttonValue}</Button>
 //             <input type="button"  onClick={(e)=>copyFunction(e)} value={buttonValue} />
 //             <input style={{display:'none'}} id="code_input" type="text" onClick={(e)=>copyFunction(e)} value={userScriptCode}/>
         </div>
