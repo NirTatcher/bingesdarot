@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Add Tampermonkey to your Chrome Browsers', 'Copy the Sdarot-Binging script!',"Paste in a new script" ,'Save and refresh Sdarot page', 'Is it working?'];
+  return ['Add Tampermonkey to Chrome', 'Copy the Sdarot-Binging script!',"Paste in a new script" ,'Save and refresh Sdarot page', 'Is it working?'];
 }
 
 function getStepContent(step) {
@@ -29,7 +29,7 @@ function getStepContent(step) {
     case 0:
       return <div style={{ alignItems: 'start' }}>
         Visit  <a href="https://www.tampermonkey.net" >Tampermonkey</a><br />
-        and download Tampermonkey Stable
+        and download Tampermonkey Stable extention for Chrome
 
       </div>
     case 1:
