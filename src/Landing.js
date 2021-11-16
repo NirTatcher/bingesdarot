@@ -6,7 +6,6 @@ export default function Landing() {
         <div className="wrapper">
 
             <div className="conetent">
-                content
                 <StepperInstructions />
             </div>
         </div>
