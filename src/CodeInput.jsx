@@ -18,11 +18,8 @@ export default function CodeInput() {
       }
     return (
         <div>
-            <label htmlFor="code_input">copy this!</label>
-            <br/>
             <Button variant="contained"
                 color="primary" onClick={(e)=>copyFunction(e)} >{buttonValue}</Button>
-
         </div>
     )
 }
