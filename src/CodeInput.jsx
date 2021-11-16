@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import fileText from './ss.txt'
+import fileText from './script.txt'
 export default function CodeInput() {
     const [userScriptCode,setScript] = useState("")
     const [buttonValue,setButtonValue] = useState("Click To Copy")
